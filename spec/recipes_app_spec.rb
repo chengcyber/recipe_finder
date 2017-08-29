@@ -1,4 +1,6 @@
+require('capybara')
 Capybara.default_driver = :poltergeist
+# Capybara.default_driver = :selenium
 
 Capybara.app_host = "http://localhost:3000"
 
@@ -20,7 +22,7 @@ describe "Recipes App" do
 
   context "visit root" do
     before { visit '/' }
-    
+
     it "displays chocolate (default)" do
       expect(page).to have_content 'Chocolate'
     end

@@ -1,0 +1,30 @@
+// Place all the styles related to the recipes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.recipes-wrapper {
+
+  margin-bottom: 10px;
+
+  .row {
+    display: flex;
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+  .row:not(:first-child) {
+    height: 150px;
+  }
+
+  .col-third {
+    text-align: center;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 33.33%;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

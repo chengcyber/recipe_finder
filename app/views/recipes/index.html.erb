@@ -1,0 +1,29 @@
+<h1>Recipes</h1>
+<h3>We are searching for <%= @search_term %><p>
+
+<div class="recipes-wrapper">
+  <div class="row">
+    <div class="col-third">
+      image
+    </div>
+    <div class="col-third">
+      title
+    </div>
+    <div class="col-third">
+      rank
+    </div>
+  </div>
+  <% @recipes.each do |recipe| %>
+    <div class="row">
+      <div class="col-third">
+        <img src=<%= recipe["image_url"] %> />
+      </div>
+      <div class="col-third">
+        <%= recipe["title"] %>
+      </div>
+      <div class="col-third">
+        <%= format('%.3f' , recipe["social_rank"]) %>
+      </div>
+    </div>
+  <% end %>
+</div>
