@@ -1,3 +1,4 @@
+require 'spec_helper'
 require('capybara')
 Capybara.default_driver = :poltergeist
 # Capybara.default_driver = :selenium

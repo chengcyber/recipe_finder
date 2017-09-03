@@ -7,6 +7,6 @@ RSpec.configure do |config|
   config.include Capybara::DSL
 end
 
-before(:all) do
-  Rails.cache.clear
-end
+# before(:all) do
+#   Rails.cache.clear
+# end
